@@ -2,6 +2,8 @@
 
 ComfyUI 自定义节点，用于将多视图参考图自动分割为独立面板，支持角色一致性工作流中的多视角参考图处理。
 
+<img width="1537" height="941" alt="剪贴板-20260824" src="https://github.com/user-attachments/assets/eedaaef5-a9dc-4f19-9034-43d2a995a966" />
+
 ## 功能特性
 
 - 支持多种布局模式：2-view、3-view、1+3、2x2、3x3、6x6、manual
