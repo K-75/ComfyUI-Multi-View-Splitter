@@ -175,7 +175,11 @@ def _split_panels(image, layout_mode, panel_coords=None):
     h, w = img_np.shape[:2]
 
     # Priority: custom coords > layout mode defaults
-    if panel_coords:
+    if layout_mode == "manual":
+        if not panel_coords:
+            raise ValueError("manual mode requires panel_coords to be set")
+        coords = panel_coords
+    elif panel_coords:
         coords = panel_coords
     elif layout_mode == "2-view":
         # 2 equal horizontal panels
